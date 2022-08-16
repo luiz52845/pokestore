@@ -1,26 +1,52 @@
-<h2>Products</h2>
+<div class="search">
+  <input type="text" placeholder="Buscar Pokemon..." #input (keyup)="getSearch(input.value) ">
+</div>
 
-<div *ngFor="let product of products">
+<div class="container-products">
+  <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
+    <!--  <a [routerLink]="['pokemon', pokemon.status.id]" *ngIf="pokemon.status" class="card"> -->
+    <a [routerLink]="['/products', pokemon.status.id]" *ngIf="pokemon.status" class="card">
+      <section>
+        <h2>
+          {{pokemon.name | titlecase }}
+        </h2>
 
-    <h3>
-        <a
-          [title]="product.name + ' details'"
-          [routerLink]="['/products', product.id]">
-          {{ product.name }}
-        </a>
-      </h3>
+        <div class="img-pokemon">
+          <img width="200" height="200" [src]="pokemon.status.sprites.other.dream_world.front_default"
+            [alt]="pokemon.name">
+        </div>
+        <ul>
+          <li *ngFor="let value of pokemon.status.types">
+            <div [ngClass]="{
+                'normal': value.type.name=='normal', 
+                'grass': value.type.name=='grass', 
+                'fire':value.type.name=='fire' , 
+                'water':value.type.name=='water',
+                'flying':value.type.name=='flying',
+                'fighting ':value.type.name=='fighting',
+                'poison':value.type.name=='poison',
+                'electric':value.type.name=='electric',
+                'ground':value.type.name=='ground',
+                'rock':value.type.name=='rock',
+                'psychic':value.type.name=='psychic',
+                'ice':value.type.name=='ice',
+                'bug':value.type.name=='bug',
+                'ghost':value.type.name=='ghost',
+                'steel':value.type.name=='steel',
+                'dragon':value.type.name=='dragon',
+                'dark':value.type.name=='dark',
+                'fairy':value.type.name=='fairy'
+              }">
+              {{value.type.name}}
+            </div>
+          </li>
+        </ul>
+      </section>
+    </a>
 
-  <p *ngIf="product.description">
-    Description: {{ product.description }}
-  </p>
+  </ng-template>
 
-  <button type="button" (click)="share()">
-    Share
-  </button>
-  
-  <app-product-alerts
-    [product]="product" 
-    (notify)="onNotify()">
-  </app-product-alerts>
 
 </div>
+
+

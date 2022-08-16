@@ -1,0 +1,339 @@
+
+.search {
+    display:flex;
+    width: 100%;
+    height:60px;
+    background-color:#1976d2;
+    justify-content:center;
+    margin-top: 0px;
+    
+}
+
+.container-products{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color:#f3f3f3;
+    justify-content:center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color:RED;
+  
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+  }
+
+ h2 {
+    text-align: center;
+ }
+ ul, li{
+    list-style: none;
+    display: inline-block;
+    background-clor: green;
+    padding-right: 4px;padding-right: 4px;
+    text-align: center;
+    
+ }
+  .card-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card {
+    all: unset;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #d3d3d3;
+    height: 100%;
+    width: 250px;
+    margin: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    
+  }
+
+  a:hover {
+    color: white;
+    transform: translateY(-0.5rem);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  .normal{
+    display: flex;
+    background-color: #a4acaf;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .fire{
+    display: flex;
+    background-color: #fd7d24;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+  .water{
+    display: flex;
+    background-color: #4592c4;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .grass{
+    display: flex;
+    background-color: #9bcc50;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+  .flying{
+    display: flex;
+    background-color: #3dc7ef;;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+  .fighting{
+    display: flex;
+    background-color: #d56723;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+  .poison{
+    display: flex;
+    background-color: #b97fc9;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+  .electric {
+    display: flex;
+    background-color: #eed535;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+  .ground {
+    display: flex;
+    background-color: #ab9842 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .rock{
+    display: flex;
+    background-color: #a38c21;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .psychic  {
+    display: flex;
+    background-color: #f366b9 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .ice {
+    display: flex;
+    background-color: #51c4e7 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .bug {
+    display: flex;
+    background-color: #729f3f ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .ghost {
+    display: flex;
+    background-color: #7b62a3 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .steel {
+    display: flex;
+    background-color:  #9eb7b8 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .dragon {
+    display: flex;
+    background-color:  #f16e57 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+  .dark {
+    display: flex;
+    background-color:  #707070 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .fairy {
+    display: flex;
+    background-color:  #fdb9e9;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+
+  
+
+ 

@@ -1,6 +1,19 @@
-<h3>Cart</h3>
+<div class="container">
 
-<div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
+  <div class="card">
+    <div>
+      <ul *ngFor="let pokemon of itemsP">
+        <li>
+
+         
+          <img width="100" height="100" [src]="pokemon[0].sprites.other.dream_world.front_default">
+          {{pokemon[0].name}}
+        </li>
+     
+      </ul>
+      
+    </div>
+    <button type="button">Limpar Carrinho</button>
+  </div>
+
 </div>

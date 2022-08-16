@@ -1,8 +1,37 @@
-<h2>Product Details</h2>
+<div *ngIf="pokemon" class="main">
+    <div *ngFor="let data of pokemon" class="cointainer">
 
-<div *ngIf="product">
-    <h3>{{ product.name }}</h3>
-    <h4>{{ product.price | currency }}</h4>
-    <p>{{ product.description }}</p>
-    <button type="button" (click)="addToCart(product)">Buy</button>
+        <div *ngIf="data.sprites" class="card">
+            <h1>
+                {{data.name | titlecase }}
+            </h1>
+
+            <div *ngIf="data.sprites">
+                <img width="400" height="400" [src]="data.sprites.other.dream_world.front_default">
+            </div>
+            <button type="button" (click)="addToCartP(pokemon)">Adicionar ao Carrinho</button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <div *ngFor="let data of pokemon">
+
+            <ul *ngIf="data.types">
+                <h1>Type :</h1>
+
+                <li *ngFor="let specie of data.types">
+                    <h2>{{specie.type.name | titlecase}}</h2>
+                </li>
+            </ul>
+
+            <ul *ngIf="data.abilities">
+                <h1>Habilidade :</h1>
+                <li *ngFor="let habilidade of data.abilities">
+                    <h2> {{habilidade.ability.name | titlecase}}</h2>
+                </li>
+            </ul>
+        </div>
+
+    </div>
 </div>

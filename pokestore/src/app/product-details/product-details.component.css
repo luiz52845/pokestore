@@ -1,0 +1,66 @@
+.main{
+    display:flex;
+    width:1600px;
+    background-color: #eee;
+    justify-content: center;
+}
+
+.cointainer{
+    display:flex;
+    background-color:  #eee;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card {
+    all: unset;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background-color: #d3d3d3;
+    height: 550px;
+    width: 500px;
+    margin: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out; 
+  }
+
+  .stats{
+    width: 200px;
+    height:100px;
+    background-color: red;
+  }
+
+  .value{
+    width: 200px;
+    height:100px;
+    background-color: #d3d3d3;
+  }
+
+li{
+    list-style-type: none;
+    font-weight: 900;
+  
+    padding: 4px;
+    background-color: #1986d2;
+    color: red;
+    border-box:solid;
+    border-radius: 5px;
+    margin: 4px;
+    
+}
+h1{
+color:black;
+font-weight: 900;
+}
+h2{
+    color:white;
+    font-weight: 600;
+}
+
+.tipo{
+    display: inline-block;
+}
